@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(../img/22.jpg);
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="border: 2px dashed #ccc; width: 320px; text-align: center">
+      <label for="sitename">任务：</label>
+      <input type="text" id="sitename" name="sitename" class="text" />
+      <br />
+      <label for="siteurl">状态：</label>
+      <input type="text" id="siteurl" name="siteurl" />
+      <br />
+      <input type="button" onclick="save()" value="新增记录" />
+      <hr />
+      <label for="search_phone">输入任务查询：</label>
+      <input type="text" id="search_site" name="search_site" />
+      <input type="button" onclick="find()" value="查询" />
+
+      <p id="find_result"><br /></p>
+    </div>
+    <br />
+    <div id="list"></div>
+    <input type="button" onclick="del_click()" value="删除所有" />
+    <script src="../js/task.js"></script>
+  </body>
+</html>

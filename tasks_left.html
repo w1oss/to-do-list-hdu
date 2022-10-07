@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(../img/22.jpg);
+        background-size: 100% 100%;
+      }
+    </style>
+    <style>
+      #box1 {
+        font-size: 40px;
+      }
+      a {
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="box1">TodoList</div>
+      <div id="box">
+        <script>
+          box.innerHTML = "分类";
+        </script>
+      </div>
+      <br />
+      <a href="">已做完</a>
+      <div
+        onmouseout="mOutCom()"
+        style="
+          background-color: #3e3bf3;
+          width: 80%;
+          height: 70px;
+          padding: 20px;
+        "
+        id="yizuowan"
+      >
+        <!-- 耶！ -->
+      </div>
+
+      <a href="">未做完</a>
+      <div
+        onmouseout="mOutNotcom()"
+        style="
+          background-color: #80e0f8;
+          width: 80%;
+          height: 70px;
+          padding: 20px;
+        "
+        id="weizuowan"
+      >
+        <!-- 未做完 -->
+      </div>
+      
+      <script src="../js/task.js"></script>
+
+    </nav>
+  </body>
+</html>
